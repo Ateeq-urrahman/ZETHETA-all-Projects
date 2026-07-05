@@ -30,6 +30,17 @@ npm run build
 npm run test:coverage
 ```
 
+## Project Documentation
+
+A consolidated documentation file is available at [PROJECTS_DOCUMENTATION.md](PROJECTS_DOCUMENTATION.md).
+
+It covers the purpose, features, tech stack, and run instructions for:
+- the main project
+- Project 1A
+- Project 1B
+- Project 1C
+- Project 1D
+
 ## Project Status
 
 Complete implementation scaffold with production-oriented architecture, focused tests, and documentation. Repository must remain private and confidential.
