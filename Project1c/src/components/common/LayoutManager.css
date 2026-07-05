@@ -1,0 +1,142 @@
+.layout-manager-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.layout-manager {
+  background: var(--theme-surface);
+  border: 1px solid var(--theme-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 120px rgba(0, 0, 0, 0.32);
+}
+
+.layout-manager h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.layout-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.action-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.action-group label {
+  color: var(--theme-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.action-group input {
+  border: 1px solid var(--theme-border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--theme-text);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.action-group input[type='file'] {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.action-group .btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--theme-accent);
+  color: var(--theme-background);
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-group .btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.layout-info {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--theme-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.layout-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.layout-info > p {
+  margin: 0 0 1rem;
+  color: var(--theme-muted);
+}
+
+.layout-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.layout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.layout-item strong {
+  flex: 1;
+}
+
+.layout-item span {
+  color: var(--theme-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.layout-manager .btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--theme-text);
+  border: 1px solid var(--theme-border);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.layout-manager .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
